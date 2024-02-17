@@ -4,7 +4,7 @@
     <img src="example.png" width="800px">
 </p>
 
-<p align="center">A tool to create beautiful Instagram stories to share articles/websites with!</p>
+<p align="center">A tool that creates beautiful Instagram stories to share articles/websites with!</p>
 
 ## Setup
 Download the repo:
@@ -34,8 +34,8 @@ $ pip install -r requirements.txt
 
 Generate an image!
 
-This project accepts a website url and then parses the page to get the og:image.
-It will save the image in the `images` directory.
+This project accepts a website url and then parses the page to get the `og:image` meta tag.
+It will then generate the image and save it image in the `images` directory.
 ```
 $ python generate.py [url here without the brackets]
 ```
