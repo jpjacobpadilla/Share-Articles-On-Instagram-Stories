@@ -60,7 +60,7 @@ def main():
     driver = webdriver.Chrome(options=chrome_options)
     driver.set_window_size(2500, 3500)
 
-    driver.get(f'file://{os.path.join(os.getcwd(), 'index.html')}')
+    driver.get(f"file://{os.path.join(os.getcwd(), 'index.html')}")
 
     # Instantiate stuff
     driver.execute_script(f'setImages("{og_image}")')
@@ -71,7 +71,7 @@ def main():
 
     # Take screenshot
     container = driver.find_element(By.ID, 'story-container')
-    container.screenshot(f'images/article_story-[{'-'.join(title.lower().split())}].png')
+    container.screenshot(f"images/article_story-[{'-'.join(title.lower().split())}].png")
 
     driver.quit()
 
