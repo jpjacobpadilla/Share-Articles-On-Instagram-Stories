@@ -17,19 +17,14 @@ Go into the repository:
 $ cd Share-Articles-On-Instagram-Stories
 ```
 
-Create a virtual environment to store the project dependencies
+Install dependencies
 ```
-$ python -m venv venv
+$ poetry install
 ```
 
 Activate the environment
 ```
-$ source venv/bin/activate
-```
-
-Install the dependencies
-```
-$ pip install -r requirements.txt
+$ poetry shell
 ```
 
 Generate an image!
